@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  username: 'vagrant'
+  password: '1111'
+
+development:
+  <<: *default
+  database: give_me_hand_development
+test:
+  <<: *default
+  database: give_me_hand_test
+production:
+  <<: *default
+  database: give_me_hand_production
